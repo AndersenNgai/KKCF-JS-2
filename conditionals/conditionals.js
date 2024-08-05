@@ -115,3 +115,16 @@ else {
 // Use conditionals and comparisons to find which of the 3 is largest 
 // console.log the result
 // Result: “x is the largest number”
+
+let d = 3255;
+let e = 9;
+let f = prompt("Enter a number:");
+console.log("d: ", d, ", e: ", e, ", f (your number): ", f)
+if (d > e){
+    if (d > f){console.log("d at 3255 is the biggest")}
+    else {console.log("Your number is highest")}
+}
+else {
+    if (e > f){console.log("e at 9 is the biggest")}
+    else {console.log("Your number is biggest")}
+}
