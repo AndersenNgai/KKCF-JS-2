@@ -29,7 +29,7 @@ document.querySelector("#text-output").innerText = "bar";
 // Concatenate the user’s name into a welcome message
 // Use a DOM method to output the welcome message into an html element
 let name = prompt("Enter your name below");
-document.querySelector("#willkommen").innerText = "Hello " + name + ", welcome to- never gonna give you up";
+document.querySelector("#willkommen").innerText = "Hello " + name + ", welcome to this webpage";
 
 // 11. Modify CSS - Select the element with the id 'text-output'
 // use the style.fontSize property to set the text size to 30px
@@ -43,3 +43,11 @@ document.body.style.cssText = "color: white; background-color: black;";
 
 //14. Create a new element
 let newDiv = document.createElement("div");
+newDiv.innerText = "Image above: Rick Astley";
+document.body.append(newDiv);
+
+//15. Create an img element
+let newImg = document.createElement("img");
+newImg.src = "https://pbs.twimg.com/media/GTo6sTeXAAA7Mbs.jpg";
+newImg.style.width = "50%";
+document.getElementById("beastholder").append(newImg);
