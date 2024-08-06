@@ -37,7 +37,6 @@ let textOutput = document.getElementById("text-output");
 textOutput.style.fontSize = "60px";
 
 // 12. Select the body element and use style.cssText to change the text color and background color
-document.body.style.cssText = "color: white; background-color: black;";
 
 //13. Change src attribute of the image
 
@@ -51,3 +50,44 @@ let newImg = document.createElement("img");
 newImg.src = "https://pbs.twimg.com/media/GTo6sTeXAAA7Mbs.jpg";
 newImg.style.width = "50%";
 document.getElementById("beastholder").append(newImg);
+
+function helloWorld(){
+    let helloWorld = document.createElement("p");
+    helloWorld.innerText = "Salve munde";
+    document.body.append(helloWorld);
+    alert("Salve munde!");
+}
+
+helloWorld();
+
+function add2(a, b){
+    alert(a + b);
+}
+
+add2(5000, 2);
+
+let myButton = document.createElement("button");
+myButton.innerText = "Another button";
+document.body.append(myButton);
+
+function handleClick(){
+    alert("Button was clicked");
+}
+
+// Use Eventlistener to run the handleClick() function when button click
+myButton.addEventListener('click', handleClick);
+
+let darkModeButton = document.createElement("button");
+darkModeButton.innerText = "Diskword Mode";
+function darkMode(){document.body.style.cssText = "color: white; background-color: black;";}
+darkModeButton.addEventListener('click', darkMode);
+document.body.append(darkModeButton);
+
+let randomColor = document.querySelector("#randomcolor");
+function chooseColor(){
+    let randomR = Math.floor(Math.random() * 225);
+    let randomG = Math.floor(Math.random() * 225);
+    let randomB = Math.floor(Math.random() * 225);
+    document.body.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`;
+}
+randomColor.addEventListener("click", chooseColor);
